@@ -1,0 +1,10 @@
+--- a/kibi.metainfo.xml	2021-12-30 02:54:13.604083661 -0500
++++ b/kibi.metainfo.xml	2021-12-30 03:28:31.106365646 -0500
+@@ -56,6 +56,6 @@
+     <screenshots>
+       <image type="default">https://gist.githubusercontent.com/ilai-deutel/39670157dd008d9932b2f2fd3c885cca/raw/bfdbfc96181c4f6e3ce2663c25c6e97bf57c8684/kibi.gif</image>
+     </screenshots>
+-    <launchable type="desktop-id">kibi.desktop</launchable>
++    <launchable type="desktop-id">com.github.ilai_deutel.kibi.desktop</launchable>
+     <content_rating type="oars-1.0" />
+ </component>
