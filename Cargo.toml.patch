@@ -1,0 +1,9 @@
+--- i/Cargo.toml
++++ w/Cargo.toml
+@@ -1,5 +1,5 @@
+ [workspace]
+ resolver = "3"
+-members = ["fuzz", "xtask"]
++members = []
+
+ [workspace.package]

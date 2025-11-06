@@ -1,18 +1,26 @@
 app-id: com.github.ilai_deutel.kibi
+
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
+
 command: kibi
-finish-args:
-  - --filesystem=host
-  - --filesystem=/tmp
-  - --filesystem=/var/tmp
+
+rename-desktop-file: kibi.desktop
+rename-icon: logo
+
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin
   env:
     CARGO_HOME: /run/build/kibi/cargo
+
+finish-args:
+  - --filesystem=host
+  - --filesystem=/tmp
+  - --filesystem=/var/tmp
+
 modules:
   - name: kibi
     buildsystem: simple
@@ -22,26 +30,19 @@ modules:
       - install -Dm755 'target/release/kibi' --target-directory '/app/bin'
       - install -Dm644 'config_example.ini' '/app/etc/kibi/config.ini'
       - install -Dm644 syntax.d/* -t '/app/share/kibi/syntax.d'
-      - install -Dm644 'kibi.desktop' '/app/share/applications/com.github.ilai_deutel.kibi.desktop'
-      - install -Dm644 'kibi.metainfo.xml' '/app/share/metainfo/com.github.ilai_deutel.kibi.appdata.xml'
-      - install -Dm644 'logo.svg' '/app/share/icons/hicolor/scalable/apps/com.github.ilai_deutel.kibi.svg'
+      - install -Dm644 'kibi.desktop' -t '/app/share/applications'
+      - install -Dm644 'com.github.ilai_deutel.kibi.metainfo.xml' -t '/app/share/metainfo/'
+      - install -Dm644 'assets/logo.svg' -t '/app/share/icons/hicolor/scalable/apps/'
+    test-commands:
+      - cargo --offline test --release --locked --verbose
     sources:
       - cargo-sources.json
       - type: archive
-        url: https://github.com/ilai-deutel/kibi/archive/v0.2.2/kibi-0.2.2.tar.gz
-        sha256: df0e2945d9d08fed3a0adbe73c73405641615eb55835675e06e91411fd541e91
-      # These files will be included in the v0.2.3 archive. When Kibi v0.2.3 is
-      # released, we can remove these file from the `sources` array.
+        url: https://github.com/ilai-deutel/kibi/archive/v0.3.1/kibi-0.3.1.tar.gz
+        sha256: 2905743c8fc065054d3776e9b16fe89903cc0547eaedd8d33b66d2e29ceb0191
       - type: file
-        url: https://raw.githubusercontent.com/ilai-deutel/kibi/af20c3d70c03885830a17a7cdacc8ec1655c4852/kibi.metainfo.xml
-        sha256: 72f3969c014632b83db6f9d090f8c9574349e2fbf8f37e4ec9c189f0e0d9685b
-      - type: patch
-        path: kibi.metainfo.xml.patch
-      - type: file
-        url: https://raw.githubusercontent.com/ilai-deutel/kibi/6fd5b668320d6965f742bd7c56af29ee5f031a16/kibi.desktop
-        sha256: c387bb34c7c690aa5bbe98795fa34fb1a3854dd3b3c6cd6e9cf185fbf842932f
+        path: com.github.ilai_deutel.kibi.metainfo.xml
       - type: patch
         path: kibi.desktop.patch
-      - type: file
-        url: https://raw.githubusercontent.com/ilai-deutel/kibi/6fd5b668320d6965f742bd7c56af29ee5f031a16/assets/logo.svg
-        sha256: 9afc2e0f2231a09f0afb51c6c6272f0b0187ff21c9c9c60d5895993601b0e155
+      - type: patch
+        path: Cargo.toml.patch

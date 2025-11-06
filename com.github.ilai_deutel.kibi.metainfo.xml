@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright Ilaï Deutel -->
+<component type="console-application">
+  <id>com.github.ilai_deutel.kibi</id>
+  <project_license>MIT OR Apache-2.0</project_license>
+  <metadata_license>MIT</metadata_license>
+  <name translate="no">Kibi</name>
+  <summary>Small but mighty text editor</summary>
+  <developer id="dev.ilai">
+    <name translate="no">Ilaï Deutel</name>
+  </developer>
+  <description>
+    <p>Kibi is a configurable text editor with UTF-8 support, incremental search, syntax highlighting, line numbers and more, written in less than 1024 lines of Rust with minimal dependencies.</p>
+    <p>Kibi is compatible with Linux, macOS, and Windows.</p>
+  </description>
+  <categories>
+    <category>Development</category>
+    <category>Utility</category>
+    <category>ConsoleOnly</category>
+    <category>TextEditor</category>
+  </categories>
+  <keywords>
+    <keyword>text</keyword>
+    <keyword>editor</keyword>
+  </keywords>
+  <url type="homepage">https://github.com/ilai-deutel/kibi</url>
+  <url type="bugtracker">https://github.com/ilai-deutel/kibi/issues</url>
+  <url type="vcs-browser">https://github.com/ilai-deutel/kibi</url>
+  <releases>
+    <release version="0.3.1" date="2025-11-01">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.3.1</url>
+      <description>
+        <ul>
+          <li>Adds support for end-of-options delimiter <code>--</code> (following POSIX.1-2024 12. Utility Conventions), allowing Kibi to be used as the editor for the <code>sudoers</code> file with <code>visudo</code></li>
+          <li>Fixes crash when backspace was pressed in find mode with empty search field</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/480">#480</issue>
+      </issues>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.3.1.tar.gz</location>
+          <checksum type="blake3">f2b69e3b0fc471c2666f00e92109f053c00645a9a9c36f9919b51230fa0a1231</checksum>
+          <checksum type="blake2b">
+            2dba7691a40cb523e148810603fad998a7bcdd41d12cf4c1186d548a1ed26fc44ca0ac29b365558933e9b6fef837875b1a06a629025e80081e33a87b6dbb2b05</checksum>
+          <checksum type="sha512">
+            59cb7132fb243725ace87d1348cd1e76b81a95fb78b94744d5f4237b0021ff51c7721b0fe2c9a8d2fd680696e907120fe16f5747d33fcf510a7724d42e1663f5</checksum>
+          <checksum type="sha256">2905743c8fc065054d3776e9b16fe89903cc0547eaedd8d33b66d2e29ceb0191</checksum>
+          <checksum type="sha1">33ad1211fa2e064564da08aba3a35ad5a481a9ab</checksum>
+          <size type="download">1240967</size>
+          <size type="installed">1802240</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-aarch64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">36981634386c5b2a09a8d6d0734447ef7d956383d33d33dfd24063591eee24b1</checksum>
+          <checksum type="blake2b">
+            e374fc2ce2e21b154793d02ee7e0c1c63e650c97df3dfd2ea8bebcb076f815a1a179bd452505d575273fb3727a0c325771e90d0c59762eadea99b531c494bc58</checksum>
+          <checksum type="sha512">
+            2ab5bb766951b774a5e1224186a608202d9a0aeab256164b0b1c0e828de5349e240c5faa180f5a1194deb4603c6473d8525ff2df52b79ef817c58c9fa1ae2a66</checksum>
+          <checksum type="sha256">731a7d479cfff3ea62db9d81cc76c76bc1da8ac27ff782929c847591fb4a3f59</checksum>
+          <checksum type="sha1">56538cb6ff09742f3e4c76473a7f66fa98fd0df2</checksum>
+          <size type="download">245342</size>
+          <size type="installed">570368</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-android">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-aarch64-linux-android.tar.gz</location>
+          <checksum type="blake3">38600e32b8549514dce2b72139253c448bb27811d1d3c8810407ab14efb8685c</checksum>
+          <checksum type="blake2b">
+            57f5f9b23a6ea527fb5cd4899da21147b4ecc7d4e8a76f5f2f403d5b80476d704842ffa9c75111c757ea612029bb23da495c10d67a68e04f743df3b94a5c8b66</checksum>
+          <checksum type="sha512">
+            ae6eddc79d6808b877c8b0212cad988d6d0d2112d45903d8a9ac2a670fdd9970fe3983e0be8d0a0d532533df1679ac60fb5e9d1dc9078db5cd00647b2c8bafb8</checksum>
+          <checksum type="sha256">973da65653447a7e28d35094d743d2d3cdfdb43f37bebdefab7ad26f8d7e4ec8</checksum>
+          <checksum type="sha1">5046741b5efc64801e18cfed66cb990a30ee3e2d</checksum>
+          <size type="download">205749</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-aarch64-pc-windows-msvc.tar.gz</location>
+          <checksum type="blake3">bf34ae5db013a85d5b3eba7f4a7d6896b6c5fc809498b7829499463cf40104e4</checksum>
+          <checksum type="blake2b">
+            0fe8934012b5a52a6519e76a9450c886e180edf4eca2ef483d062744acd5ca78a7124e337865630452940f8b8148fadcdeec206f826d810e2dccd042118832d8</checksum>
+          <checksum type="sha512">
+            c3904671d39a042d65291c2b6d51cd1b067bea899fdba5ec980e1d2a801a6fb46a2437fc576544f6da0208b0ce5496a83a78c92a946d60123e31b62ff6744fbf</checksum>
+          <checksum type="sha256">1e387731bb7e81e457b200524c24b7d3b4fdf9116f486ce0d82fc17a34d27504</checksum>
+          <checksum type="sha1">3310dad2be348321d139a5b959c02ffc118605b8</checksum>
+          <size type="download">193617</size>
+          <size type="installed">460800</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-aarch64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">5c920d3cb3f62721b796f43b792a938d0befd35c77f0662138963c31e534835b</checksum>
+          <checksum type="blake2b">
+            dcd7135e5504b9877e9d97bc9f3981ccf420f37248f212de9b15c059d7c5c2455d9b727147e3a452194ba28645333556c02458ea43932fceae50f78727c1489c</checksum>
+          <checksum type="sha512">
+            5da4e22ae374614af7db0fef88e0155f1f19625e51af03d7f6f74360d086e9d5ac790d1e66e64012d5bbd200f6b296d281345a88274f465816be6040cc8ece99</checksum>
+          <checksum type="sha256">d4fc7bf22c424a8836ff084bb36f79b813ec3fa3187ef2c060a9b018fc26364f</checksum>
+          <checksum type="sha1">29de47510766a55ccb243ecb2b3f2c741bb7e87b</checksum>
+          <size type="download">208976</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-aarch64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">5774d0932c1c14cece0cf6d08e63cc2500844ad8aa056266ae36fcc15f3d0bed</checksum>
+          <checksum type="blake2b">
+            bdf23dadea926c99982ecf3bd492e7c93ad0d5e836873da2b9214192336d70fe554a5549b9807e8e0451b495a712583d37c00d7f5f14f083eb0d934bdbcba067</checksum>
+          <checksum type="sha512">
+            e7bb2b22f77fd51cc976daa0a36c7a7adffc35a25296043eca09090001d2e35afcf10ec6cfb12df702331d94fe985283338ea50fc4c9d5a7cad0322c0e91ac04</checksum>
+          <checksum type="sha256">31d4618a152265d82e81a90910e8e6d9157861f34869847c32825590566928c1</checksum>
+          <checksum type="sha1">07626b73a7de6d5b443c944a9a5374bbcdf4e10e</checksum>
+          <size type="download">240056</size>
+          <size type="installed">348160</size>
+        </artifact>
+        <artifact type="binary" platform="i386-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-i686-pc-windows-msvc.zip</location>
+          <checksum type="blake3">2f5ef167e5fbf32f0bf0d60066e85ede6e059bddf14eb91378520f66e76993dd</checksum>
+          <checksum type="blake2b">
+            fa8b77c984bbf3235c2fe4158e4172c5b35d083d5043cc1f140aa89bdd4cf49fefd9f7f9ae1cb169c997cafc9c6d0b0b4907ff11fdb4af111825b863a30c0eae</checksum>
+          <checksum type="sha512">
+            3f20287effd2b1380d0576371a3f8ac551881babba0e35b54a58ec32cf6536d49c7bd3c3408dd1b437ba6ce496a7847066ac38c2090b44e1f54fe956dff614de</checksum>
+          <checksum type="sha256">3538076d476742d02d40cfeddff9ee811c5fdbd7d3396ab147ff76f0c2ad5a6b</checksum>
+          <checksum type="sha1">3756f640318ae2f043a1f1d7fc6bc49fddec34ac</checksum>
+          <size type="download">187258</size>
+          <size type="installed">230702</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">7241425fb0bdf26c50608aae29ef5e6b8442135541d540aeb052000fe18fdf77</checksum>
+          <checksum type="blake2b">
+            5ce594e2f29a7a220bdc39f1fd0a97662fe7af66cfee15a01cf04cae7380b20340f5613b399194b00517e45802a69b7394b6d270313a521a8bcaf463a89e23e5</checksum>
+          <checksum type="sha512">
+            debd24eac7aab3d5f4dd0b7e4486cae5800ddea0c25d4d47f1c08e73baa53753569c6ca321bc9c9dc1c97e72a4f41333e02c001c496d4b651b1ed74b1871f87b</checksum>
+          <checksum type="sha256">77f83de4007ce38a4c4cc159675355ceadbd2a35e4c716922190e9a2d609d5cb</checksum>
+          <checksum type="sha1">b4209b7578022f5962e110eb227273a745525cab</checksum>
+          <size type="download">246395</size>
+          <size type="installed">358400</size>
+        </artifact>
+        <artifact type="binary" platform="wasm32-any-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-wasm32-wasip1.tar.gz</location>
+          <checksum type="blake3">8b4b093782441a8cebd8a9a68f246e415d57fc3b81933ef0a46229f758f51ff9</checksum>
+          <checksum type="blake2b">
+            9c52cff245e968a56138c5bd7b3bd7d7cfbf4916e5971244610bdc05f79d00bcd3a14309e8abf7e4c1bb8777456d18160008edc85808a4ba15fbfcf8cfa17101</checksum>
+          <checksum type="sha512">
+            46c4d58c19768c5253068b8938a04497d3c29af95917fca764475554b2ba81f98969cfede90946f2d52d0b5c97f5551ded9b249e5f259873098d751859123968</checksum>
+          <checksum type="sha256">6fb488ecee01ab3735d6da98e1ed1ac8cdeb5c42d95579521d866c601f3f65d8</checksum>
+          <checksum type="sha1">55a8aaa2c7874e8ffca31cbcf454bcb17c290715</checksum>
+          <size type="download">105938</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">6f28003796d58a6511d627351ab2fc81465ea24bf3a66e463aacded10315cc4b</checksum>
+          <checksum type="blake2b">
+            785305ca34f5fdc30a305dcc4993a97cb85412e4caf2da4d5f78896abe041f7d4e111b5c2b0845cbf80af949235f74c94608bc4c26a52fb79b22b0791159f56d</checksum>
+          <checksum type="sha512">
+            1c0cc3c497de0e0460044d9b03c49dc5f1f9c0e75758f0c02be2b178c158338ca81d0dc0014709bc61ad0474535d7bfbb13fb1a11b8a92c69a294fb3b2fb2eb9</checksum>
+          <checksum type="sha256">bae08d87a5788c087a8c659575f7e9c3bb095ac65947360c0d8bf57901f7c697</checksum>
+          <checksum type="sha1">6e309fc07bf6cd4430c6672767476244f2db8c10</checksum>
+          <size type="download">263111</size>
+          <size type="installed">587264</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-x86_64-pc-windows-gnu.zip</location>
+          <checksum type="blake3">eab15f7ccc9701ad8dc97e9193cea90f34e0bd92ff69313cf86bb8a9f59d339b</checksum>
+          <checksum type="blake2b">
+            7f619a7496f3702ec7228d94639ccae887794be49cfae35d2350f7d323058c5e930a73e8b7e4518e57ab1fc955fd93bc65d9b5617ac6f187375ca65ecc24f599</checksum>
+          <checksum type="sha512">
+            49d7067c82749703eb4d278ee78b19b1c32122673a0e4e150b03e4369bf0f836233f6cbf80160c46a3e3feedb5b1f07249ca1c3c01a4232c0865fa114dd2a954</checksum>
+          <checksum type="sha256">ec1fc3d0020db1b8bf89125d5c88ff6ef2fd17bca1c2bfc328fc8153de7d27e5</checksum>
+          <checksum type="sha1">03b9e9fd36b9e35b43fe11602d82c97cc50b3ef6</checksum>
+          <size type="download">236837</size>
+          <size type="installed">279342</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-x86_64-pc-windows-msvc.zip</location>
+          <checksum type="blake3">2a66dca1f44048b0979d308c5f7c41b0251e697c81334a180ff50c680a1aed77</checksum>
+          <checksum type="blake2b">
+            0c71f5c00914578c15d2470cff4754ad4270bc96a17eb03d94951572af9517f29f1fdc80aa943c8dff487c0ae6f28fb6c002a36c38c82be6cadc318502e4060f</checksum>
+          <checksum type="sha512">
+            04fee9a96c8b99196d5fff1d2bac55ae8a0d1c27a70f75ec958194fd6b668ed397e2caa2756e9344d045b0f70eb1c0cf6512b6ee71ea0618685c222154671cef</checksum>
+          <checksum type="sha256">00e778e0804e406bab8af5e68637e50d54f1f16c2fd20e71ef84c27273f2757f</checksum>
+          <checksum type="sha1">e0ca9a88b1afa930de9ef9c8e3c8001e15a6dc6f</checksum>
+          <size type="download">191473</size>
+          <size type="installed">234286</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">8cf65479c742ecc6ed0951855f67500c88704dc0907bce2366b1c16e954d95b2</checksum>
+          <checksum type="blake2b">
+            1ac0ea1df63a0d0d328515dba81b4a09c0d300c1a5f6c102a70ad1bad69c5d1b136b05997557c3bbfd1fc0ea35a462e177b44e1a5466f4ec3f1a22c6319a40db</checksum>
+          <checksum type="sha512">
+            751f32a7549d4de5eb228cdf5a92d2a13dd05c21f253f288b8a193429d0196dd065e60144f7cf33b268ca6ff7cd1a150ec32e79cff66fd7c6cdbf163422ef721</checksum>
+          <checksum type="sha256">8039228b5231a0c925b8948aecc24d0e22b2ae58a73f8da25384fb18376abbd1</checksum>
+          <checksum type="sha1">abae38a1a48dc0e0148d91b89ed03771f751e25b</checksum>
+          <size type="download">230358</size>
+          <size type="installed">337920</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.1/kibi-v0.3.1-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">6fbbf67437aaf56ba2365954a06c6b6bec85f65999179103c1794d7560804d40</checksum>
+          <checksum type="blake2b">
+            642b25f5e98dff66a52b3ccb28ff5db361c354c0a35387a7f7cea05fb454124f25f5c868d5bbc18df082208b73f00bf5eae46e078cc3e1233fb942dab43abd98</checksum>
+          <checksum type="sha512">
+            4cf74d58990146dcceb7a470893e327ce368b0991e0b4f2253b7874d6adb1a06d0fb92905f676b5f4046a0197d1f7e7011605e6e925c210ff8b1f4f3abc59f6a</checksum>
+          <checksum type="sha256">207d48c846badc130b2cbf540d7b9de4f98a987421ab202f1affb930722f195c</checksum>
+          <checksum type="sha1">a8f11059e6257add77f9c2a4484f31b6581ec05c</checksum>
+          <size type="download">263145</size>
+          <size type="installed">378880</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.3.0" date="2025-10-25">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.3.0</url>
+      <description>
+        <ul>
+          <li>New features: delete, copy, cut and paste lines with Ctrl-R, Ctrl-C, Ctrl-X, Ctrl-V</li>
+          <li>New syntax highlighting configurations for C, C#, C++, CoffeeScript, CSS, D, Dart, Elixir, Fish, Go, Groovy, Haskell, HTML, Java, JavaScript, Julia, Kotlin, LRC, Lua, Markdown, MATLAB, Nim, Nix, NoSQL, Nushell, OCaml, Perl, PHP, PowerShell, Processing, PRQL, R, Racket, Ruby, Raku, RSS, Scala, SQL, Swift, TypeScript, XML, YAML, Zig, ZSH, and support for Extension-less dotfiles</li>
+          <li>Adds support for WebAssembly, and optimizes binaries across all platforms for performance and size</li>
+          <li>Avoids flicking when quickly resizing the terminal windows</li>
+          <li>Fixes crashes when opening a new file</li>
+          <li>Adds error messages when an invalid option is provided, or trying to open a special file</li>
+          <li>Makes configuration parsing more resilient: prohibit invalid durations and tab sizes, emit warnings instead of panicking for invalid configurations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/166">#166</issue>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/339">#339</issue>
+      </issues>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.3.0.tar.gz</location>
+          <checksum type="blake3">fb38a719f1346924150de86e102c13ec69fcd3617fe285c50c260d0d4bd49718</checksum>
+          <checksum type="blake2b">
+            8b87ecfdedcd21b4ad90b8634a91c9de403622f2dca3c849dfea9b315317ac6d47a2e9db2bc50cde291f8f38235782ad7f601043c0f5ec71de529b5f2665f6fc</checksum>
+          <checksum type="sha512">
+            9f8bf3cf05c4e32a9d7cd7f483c8bdeff758f1406121bdcad36f4c1cbe3d0febbddefb4aa5ab05de625bb924343f891ba89f12bb0a0539e5a8c779157f70b13e</checksum>
+          <checksum type="sha256">086eeb4c9ffaae98c02c39d932796987590978b5907ed3e6ac5d44aeabec176c</checksum>
+          <checksum type="sha1">feb18bd628f3d9b4da49ea3ca8f1ddc69a22f15a</checksum>
+          <size type="download">1235967</size>
+          <size type="installed">1781760</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-aarch64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">3c5ce36652de9c73e179b1b56beaca444902ea630c425bafdc3a6e40d13ed304</checksum>
+          <checksum type="blake2b">
+            ab16348cf1ecc6252cb106f8532c5232eca23f11fab40cd4f0a6f9c68c3df605c4b429deb718862c69435db2cc5d0ca775dfc9973362b58651b30dba920b9ce8</checksum>
+          <checksum type="sha512">
+            742814621e9fe0b1505fe7db8e4aad2319c9b2e36d6a74c2b5e1d0bd7e0fc19515a8dd10c18732b3d52275e11f49e44b89ceb298f052a2c5f6fc2dd4f3ab8a7a</checksum>
+          <checksum type="sha256">9496de0b779de0f13b3096bc4e515ac1b5410fc818fee3a8dd84058c0f9a944d</checksum>
+          <checksum type="sha1">405ee85a7acbcb70ce45c19e770b072c17fb7da3</checksum>
+          <size type="download">244083</size>
+          <size type="installed">568832</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-android">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-aarch64-linux-android.tar.gz</location>
+          <checksum type="blake3">04481a934ad6d77a855e46e8067556dee787b77b99a7a54c474ee0e395b21484</checksum>
+          <checksum type="blake2b">
+            625ab03d8b14ba59ce303034ea460df7c7b9794230402eda01436d9af38465dfe0b59aeb613bcbfc60987f5c92bb89b2c8726b3f541cf57a9d356a11ff3efd53</checksum>
+          <checksum type="sha512">
+            6cd68fba02d55f8fca0be30a62a0c460d16f726001f5033306047d81f4b3b7df14e648d1b2a6f7100ddf3e6fc2ab16003328d36ecb707e9e6c213d2a1899a155</checksum>
+          <checksum type="sha256">a03a7dc517bbd7d08bd5ce978109ecb402718ef1488d5cace173fbfb0a0f2607</checksum>
+          <checksum type="sha1">ac4892fbe0cd18f9728a5c812c99df679ccd0ec9</checksum>
+          <size type="download">204988</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-aarch64-pc-windows-msvc.tar.gz</location>
+          <checksum type="blake3">6c8508db0bbfc036559458bc4c2b2208d57de9658132f78e043b84578ce5e03c</checksum>
+          <checksum type="blake2b">
+            20896fd3d0a806537293f4091e8312d9eb20f1a35aa836cf64a772671af96073ba5defb3c747d462af7a2047e696547164c75752e6d9091504bd2ec6f4e3dd08</checksum>
+          <checksum type="sha512">
+            6350b66bd831a9d4b9aa96c9af42f85c9d9c166ee6bb1521203b4767cb348e277c9a20af46bafb66c7e33172ae449a8d7276057d46450542cf8e0c1707bf5054</checksum>
+          <checksum type="sha256">d4760836ad5963d1450fefe7fe097eef9d63c88e1e7624d3e8591cdaf4d6e700</checksum>
+          <checksum type="sha1">e2e4bedb15d3faa92797b4798d10fe572ec72576</checksum>
+          <size type="download">192197</size>
+          <size type="installed">460800</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-aarch64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">2e374a923a19ba90d9a68bedea4306dc42e9cf62b1517a9cfa5effdac4399fad</checksum>
+          <checksum type="blake2b">
+            f74d1e27344b2e75f331fa613ecd7a4eb56b39ff2419c70c0bb098d7e0a41b693ff6796466cb3238033611a7680189228cbdfe55ec8f7c3e618fec65979c2ae4</checksum>
+          <checksum type="sha512">
+            480e0b5c3c49f65821a95554e19d4ea20a85eb3d2025d07df3e0383d144cb6702c3d789218a92a17c4eca4a95d1ada111c647d468d1698d62fb3054d70c16e92</checksum>
+          <checksum type="sha256">4eba071a8fffecf8881b9bfb34ad046150a9e411a342d5bbbcb1286ebf975726</checksum>
+          <checksum type="sha1">9e4b16e5a7ed2abf7370ffb3e639e47984dd8bdc</checksum>
+          <size type="download">207450</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="aarch64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-aarch64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">d3a765e67f70d395fd70330363ea60ad887a125365562de387c5692986540699</checksum>
+          <checksum type="blake2b">
+            1d94c649f8e352b7f0a9338c2851f74b2fcbc76e77e0b71ce84e7b27cc29c9d78501e95e6adb11957b769e24ec001fa2008d2705e376f366978f9d92233c7e89</checksum>
+          <checksum type="sha512">
+            056319989b2c4894162798abd83db21baed81bee52a0d7d91ea608a4653e4f260d0cf08e31e9547a30b5431015ffc416ba8e49f0060824cf0578675dc95fa3f9</checksum>
+          <checksum type="sha256">74c606106a41ba696f5e19c30c1b30f783befdefedf1a4a8ec2fd4892978694b</checksum>
+          <checksum type="sha1">d4382afb1aa70219fe09cd98a03a2e9ef44d5608</checksum>
+          <size type="download">239677</size>
+          <size type="installed">348160</size>
+        </artifact>
+        <artifact type="binary" platform="i386-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-i686-pc-windows-msvc.zip</location>
+          <checksum type="blake3">1c314b0cdcce116b47886993e112917590d63ff7a9edc8830cef70e3e3e876fb</checksum>
+          <checksum type="blake2b">
+            ca7925edbd58bb32763e5f5428aea5964f821abb468b8f45905e7d1c14079bd2614480727742b4caca89e1c6cd59a4ed130815072e9a64ecc0051525672f28b3</checksum>
+          <checksum type="sha512">
+            636a99b403ca07275a758ceccbd2bf381b4f78739c7f049feb4c26f86339c7e20daced27c75efc294f71cb71f807079ebde38af564f9739eddc3919e31646950</checksum>
+          <checksum type="sha256">82c1ab9cf020a1d3397bf999f5a31695f5b4f9f1bbbd7fd750b751d0481e3664</checksum>
+          <checksum type="sha1">d4cb1c75d56976253038a038188d13127b2c333f</checksum>
+          <size type="download">182881</size>
+          <size type="installed">227425</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">0aab661da7552723c32db134dcaac94ba46bba3c695ce60af0011a5a518b3ae3</checksum>
+          <checksum type="blake2b">
+            e2b6c81c8b8643e318ca5a040c218dc616ae800b2f5505a88e66bfd53a516a88464c28c6b641cad23bab15524fc4c03adab12f3f4b53fa7775a0d4e030d7fac2</checksum>
+          <checksum type="sha512">
+            7bfacd20e56cc4fb18f4583bbe2098a62177d06fd139a5b314066d3af5edf7c88da8418adef0edc8fa04f37f50361c1a6723783b1c38a7d8c48a44fce33a48b1</checksum>
+          <checksum type="sha256">cf8b90ea9e8b922964bc6b154030d5bdb5f66a421e42e019aae34dc37839609e</checksum>
+          <checksum type="sha1">35a5761362709b38b06b03939248707d24f8ec8a</checksum>
+          <size type="download">243927</size>
+          <size type="installed">358400</size>
+        </artifact>
+        <artifact type="binary" platform="wasm32-any-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-wasm32-wasip1.tar.gz</location>
+          <checksum type="blake3">60bda407e7cf7a2c525f298483ea0677e0af963883dd8803462d7e22931791d3</checksum>
+          <checksum type="blake2b">
+            1c72aa57cb8e8b395efc9468a41c192bf4c70011b391056f15eaf357aaae2e5a61a00f1494e3f0d1f749e6d815879ed01632e00379e9648f2dead4d50655b500</checksum>
+          <checksum type="sha512">
+            349562ccb3a92176fa9aef474ad87ed82d8344d253c2d27bf7a15d4f4dd6438a83d9f52a22060ec235d7b40270ee1317e5e111fec34a01685eb58a501a5f4a3f</checksum>
+          <checksum type="sha256">b256dcf95dd51b5875f01da1ae7294ab3812668f1f22d73fc84bad1e8c84d257</checksum>
+          <checksum type="sha1">9518cfc8ea36350361b3a173c271efb000cdd052</checksum>
+          <size type="download">104559</size>
+          <size type="installed">317440</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">3129fa2bd4395361d844eb42979f4dc98be343da5a816da3fd5eaa56568ac43f</checksum>
+          <checksum type="blake2b">
+            573153add0ff696f664f7da6c86af91d9310d6403dc3633763749cefd98ca5c3704bfc564956b4338812b49d9307cd347cbfad65d4930d677dc982e4c1db9aef</checksum>
+          <checksum type="sha512">
+            48f743a3d07490dfec585a20fde127f1d8dd4576f47a4307a0d1d2a0ba2441da80047125782271ea85e643a12c857d6220dbbff66c616916745cd9470bbb8ebc</checksum>
+          <checksum type="sha256">ae9aa18074401e920bacdf47fd0f52b3a2b553db777693473a327fa7d2ce00e8</checksum>
+          <checksum type="sha1">63f5e37334747daa27a990e030864207893c0815</checksum>
+          <size type="download">262175</size>
+          <size type="installed">586240</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-x86_64-pc-windows-gnu.zip</location>
+          <checksum type="blake3">9ff5f6def79202f6e526ec0d7243bf77035aef1d5df1dc6f4fb327348e572224</checksum>
+          <checksum type="blake2b">
+            a905c429432e8d307eeaf89d3f622bdd9d165113168b2920c920a9cad19c574ffd82eb70b6fbd26f7202afc484dab91961fbaebd558846c1e274c3c62daaf878</checksum>
+          <checksum type="sha512">
+            45b42cc510cb4075c884cc3a6b9927fe963f3bf2c4b14bfac2ba175e88e21db0bd0bd1c0a2abcc6baab0dcd9934d72de2c6d790b0fea698eb161b1348896757a</checksum>
+          <checksum type="sha256">c27d9777d81b8283ceb21e8864d208718a364531ed59da3c97d2b6f0eb2f4450</checksum>
+          <checksum type="sha1">5e6801088bad45481be8da6a67be0ef15050d9e0</checksum>
+          <size type="download">234913</size>
+          <size type="installed">278625</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-x86_64-pc-windows-msvc.zip</location>
+          <checksum type="blake3">3ccbd55812a9201374c049fdc55a89ecde5dcd736a6031c6ebe4d765f5a8da24</checksum>
+          <checksum type="blake2b">
+            22fe8a9315fbb46eae95fd3e612efcc7a1fa814f5415f35dba5c6b2725f3e530682d14721a1b7a64f4c541960b68238b3635121825e3e25847ce711b0ca89094</checksum>
+          <checksum type="sha512">
+            48930714497fb7dab5446601be716989d48b98eb270cc62ae94f9b51798238aff6b0c75b0d54dc4907fa6a1706ba5859caf3ab53be41da7f440c55edd2ee4423</checksum>
+          <checksum type="sha256">dfc28be355acd8e89b75dcc0f9d86dd3bc6dbb8a5bb90bccc298448e82aefcee</checksum>
+          <checksum type="sha1">ea776b5384611cced4d28e404b7ba3b03431468f</checksum>
+          <size type="download">188217</size>
+          <size type="installed">233057</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">2b4dbac92ca622b24acb4f8ddbed2f7d6d563f50ab6b95affcc49290f2450d70</checksum>
+          <checksum type="blake2b">
+            89746a7b773805eebba97834edd64317135dc090fe8bfa628565c7df0269ca7aeb4c79d13003dcc885643c3ede8ff5f25f065513c6045edafce74a017c95819c</checksum>
+          <checksum type="sha512">
+            64787928a107cdc96ec588f1a761fc063f79ba23d225dce26f97905999bab23119b7ddaa5676587e421b5aa60daf9c03fcc5aa7794ea3a78b555227c55678db1</checksum>
+          <checksum type="sha256">4697e9cca0539774f938a7a29ed0f3aac1a62fc683b8dd1ed85f5e8c183360ce</checksum>
+          <checksum type="sha1">f1ab8585269f80bbc2975548cf6f35cbc501e443</checksum>
+          <size type="download">229571</size>
+          <size type="installed">337920</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.3.0/kibi-v0.3.0-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">cd340a29f3fc1c61b95544560e19c5ba0b2d6c683343e20c559e52d2fd81b937</checksum>
+          <checksum type="blake2b">
+            22b17c5ee14236e42d48588dcf424b4919f957f220a41583a06f66b769b930f4eefd93be0ab8c6cf9b2bcb52ebe8fa185ebef03b0bfa45ca4f69fda3c3be3d70</checksum>
+          <checksum type="sha512">
+            e3081e7ded99818016f292c3046f29b6f64a9e06e36ffddaed4682ef2691accdf6fb276d5647177b8e7956d56667af4e7d8c211107cbf4ef09ec216a68e6e076</checksum>
+          <checksum type="sha256">a5f52d1067163ee0a8a06b3547f39e06633057de7f42e03dad5f5116b9e2dea5</checksum>
+          <checksum type="sha1">d95cbb600efa37ab2120acca774c80ea9fb68f18</checksum>
+          <size type="download">262134</size>
+          <size type="installed">378880</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.2.2" date="2021-02-13">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.2.2</url>
+      <description>
+        <ul>
+          <li>New feature: execute external commands directly from the editor</li>
+          <li>Adds syntax highlighting configuration for the V Programming Language</li>
+          <li>Improves errors messages for file opening (e.g. configuration file permissions)</li>
+          <li>Fixes crash on Android devices related to SELinux</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/87">#87</issue>
+      </issues>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.2.2.tar.gz</location>
+          <checksum type="blake3">42d700728d879a5ef27ab28a421269f95745a06563fb90ffe22e319aadf155f7</checksum>
+          <checksum type="blake2b">
+            9aecbac40c08e549f7ff4b0cc6a4e8eeb32877cdf1e8382e9b68781071ade9b50a0b81585190aa948b359aa8a6ad27e43d1583e7836fa23e59f5e1e73e7ece2f</checksum>
+          <checksum type="sha512">
+            da618363e38208140ec793c11a220ba32021683dd8e26874c0910f1194d9bdf9e7b5cda79ef29190944743abe31f18e8eed969b3f5466d1b82a31e09b2c7c225</checksum>
+          <checksum type="sha256">df0e2945d9d08fed3a0adbe73c73405641615eb55835675e06e91411fd541e91</checksum>
+          <checksum type="sha1">f9970bc2bdf73afe764dc832cab6a87b231a622a</checksum>
+          <size type="download">38544</size>
+          <size type="installed">163840</size>
+        </artifact>
+        <artifact type="binary" platform="i386-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-i686-pc-windows-msvc.zip</location>
+          <checksum type="blake3">2ac3b931f31f52833b47fdc412711eafa00cf70c7a7697c71ca5888fceae05fb</checksum>
+          <checksum type="blake2b">
+            634a295bd1926614262b6b7970a6515477dc871079edb169dad240e66e75d63d5c01256aede14100fc51d04156def70ec1dff9e9c9b5c6a8285a9f08d02b526e</checksum>
+          <checksum type="sha512">
+            ec413523687097e58f4ad9ba52cd8f83700547fc75adc6bebc4e1e403912a04297c7776ee4c13db241809e218d4ff54a5181b049eb2119d41bf54d26623a0f4d</checksum>
+          <checksum type="sha256">fbdc9dd4039dc2f0dce0502e6b546f19d632694d43ea9428847cebcfbcddc8ea</checksum>
+          <checksum type="sha1">c7be6401fdcdcebd8007e84b2e95ee4eb4c280e3</checksum>
+          <size type="download">171622</size>
+          <size type="installed">342369</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">b003d1698ca98cdac83f4010951695c618db74fe8aa40fc2c49d68765a5abd11</checksum>
+          <checksum type="blake2b">
+            3c45b0f027864d37f6143993c34da130888daf798cbe4eac11250d48991add4b9f2f7e472cdb0d4261acec8a900f7193c1c4112f026293421adc89d442ea3dee</checksum>
+          <checksum type="sha512">
+            3998f63e61e28be9e014a9063a9c8c43ae4f7395c4631ac5b8d12d3bb076f2ca4535332579377cccea3a85f7bd2007d9b45a14541f2fb101074c9060805931b2</checksum>
+          <checksum type="sha256">eeeb102d289c33ab4b21438d9c1ac3be38dede21003d8c406a8581edbfeb9ff4</checksum>
+          <checksum type="sha1">f91f8f06e2901aa7945b73857c248338a43d8a74</checksum>
+          <size type="download">258346</size>
+          <size type="installed">583680</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">a89a20c427f3885e3d12e6db8f5a326c4ee53fb6b1e46270968191ecfc696fee</checksum>
+          <checksum type="blake2b">
+            66fb5906e8849fb04f92f81f7202874a1a0da9b842c7b6010a4c57ae89c030d445ad3e64347d3fb693a56ea800e1c01986272d9675c680a69266f44c2c55fad3</checksum>
+          <checksum type="sha512">
+            c437cb9cb660826ac67a04f3c41000967e952146fbe41ac5fa185a1dc60a2f77f960706e5cb128cfe20906c765127696241bd5d9708e3ddb08934bc4bfc86687</checksum>
+          <checksum type="sha256">8f64edd90b73f156701b555101f9b81338ff52a1f57e9f2c09c18d8ca8a03a3c</checksum>
+          <checksum type="sha1">ef8b979484411db96562f5c9d326ddb8ac7f04c8</checksum>
+          <size type="download">223500</size>
+          <size type="installed">501760</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-x86_64-pc-windows-gnu.zip</location>
+          <checksum type="blake3">9f756095731d3e4c9cf5c1d1ae3900bf466b9aad3f0cdc1c8cc0dda8503ec947</checksum>
+          <checksum type="blake2b">
+            55dc51cf728477a0adc2a702976608dcab6127e696a57141ccc43f01e94611fb50b4954f6537dfccc2fb81487d6147e91ce633b528e04249d5d42e6eaecc3868</checksum>
+          <checksum type="sha512">
+            bee6d3578b7112de4ea0278d42ecb34afe455e393a658688d29a0cd77ab80b2161d761b68a650418ea97e5ba97f95e3850a76dd9a75843a9b7d1c3ef64036862</checksum>
+          <checksum type="sha256">5bb0521dcc5542d36bba7de14972c1c63cf0dc25e65b12b20c749f2909c0dd6d</checksum>
+          <checksum type="sha1">d09fd91b6af7de28c0d7b67d98ac3891355c9b92</checksum>
+          <size type="download">1305438</size>
+          <size type="installed">4594571</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-x86_64-pc-windows-msvc.zip</location>
+          <checksum type="blake3">138a5213cd838dc4b3913b7ec9e56f2e80a79604053c425efff7ab2aee4caccc</checksum>
+          <checksum type="blake2b">
+            20197c19aab94d670e6b5b4e796bba38ecfd62431f9c0fde9f8e50cc4ba05b91943d65f7e3102515bf9cf37a14b109798de1c3e8415a5a356506432dcdca8ba2</checksum>
+          <checksum type="sha512">
+            d8b334744b24129caa82fb0076607c583ecff99c05be52776135c1ecd5d304909fd015ab3faa8ce6177f5e3a31c0643c57ddac75e93d9aecd5796985853ca281</checksum>
+          <checksum type="sha256">d3b5e016ea4de4651c2defd8c88440437b1ab5f6fa0a9af7706f16e16f3f4013</checksum>
+          <checksum type="sha1">45f302da189c7f4bc7920a5413677873528aac47</checksum>
+          <size type="download">180083</size>
+          <size type="installed">409953</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">cb71d8ff2e2a5b2e9b1ee05a838db24f30a5f0ab16b5bcc8c4274baae10cac74</checksum>
+          <checksum type="blake2b">
+            82fc5d4dd605a6216e82315d2ce05e7a31396363d0cb3105667286205bf1ca595dbd1d2ba9838b087ca6ea48045b68f86ce3d345a8690c400219fb2931033b05</checksum>
+          <checksum type="sha512">
+            343052f34f6e3f8e8645433b1862f93f51ca4f61d4c4dfa5dd68b849df6b852ba52ecee80f9b946b684c82c26437c70cf2da02a0aba73fd790985acf8d7e2e98</checksum>
+          <checksum type="sha256">d217ff915645d6e725a24ee2a2bb1349d19b6a0ee8c38716030b8a1920e8b943</checksum>
+          <checksum type="sha1">9a41bcb48c649dd7f774e2bfa057b10aebe07ff2</checksum>
+          <size type="download">236432</size>
+          <size type="installed">542720</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.2/kibi-v0.2.2-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">9d47e7b8801cca89cedf15ef5af7230657dcb16ced37b9284b7edf01ed51fdee</checksum>
+          <checksum type="blake2b">
+            2dec661b6659d7a89dc572c8c5d44bfabc006c7e2324101372208181fb240f148ef1bd78274c5f0cb9511233af91cb216231fb5fe35aea7252fb459b0009a55f</checksum>
+          <checksum type="sha512">
+            17c65288a012eb4ee6890e1d80f7bedc74ba79d1ba8f78e2d50e3022ad07b46604e68e0ba04c5a97679babd06067a2a84d75a47b3afc16647ab6f8cbb36731a6</checksum>
+          <checksum type="sha256">cdf5b02fb6935b5ce35580279c01d7b6ec53ae6c49b5779cd95300abbe820a4e</checksum>
+          <checksum type="sha1">6aaa15f0a37cf4424d52fa8aaec1e684b31f1109</checksum>
+          <size type="download">276479</size>
+          <size type="installed">604160</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.2.1" date="2020-10-05">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.2.1</url>
+      <description>
+        <ul>
+          <li>Adds support for language-specific configuration of quote characters</li>
+          <li>Removes 2 crate dependencies (<code>nix</code>, <code>signal-hooks</code>)</li>
+          <li>Removes <code>highlight_strings</code> syntax highlighting configuration</li>
+        </ul>
+      </description>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.2.1.tar.gz</location>
+          <checksum type="blake3">acd243c20914c7d11f26c6bb9724ca89791ca6dd39f8afab578d1f8621292251</checksum>
+          <checksum type="blake2b">
+            001b97ff36805f86f7930e5bee6330db898ba0e849c5049ce6ee7b48f5386a7f92dd1d30b7a806c96578c34dbb7745a169d5160d24c2093610e20f4fdf189774</checksum>
+          <checksum type="sha512">
+            17d5c7fbbac669ebc433b07ce5dea5251edb3f5576afc859acf1c960a7daafba1d0521505c7df054a95a459e5a7d53e906f0798935a18b500467ff342e22fc85</checksum>
+          <checksum type="sha256">f6171a2c1be66aa52814b736d6c06ad9ad50b71869e4447196e16ecf951eb494</checksum>
+          <checksum type="sha1">5cd07d76ca0c8fd168e5b99b9544bb178142fcf7</checksum>
+          <size type="download">36709</size>
+          <size type="installed">153600</size>
+        </artifact>
+        <artifact type="binary" platform="i386-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-i686-pc-windows-msvc.zip</location>
+          <checksum type="blake3">a64ce02c1b1acff2474deffd5d76f49986983a9e3541625123adebe87a5499d0</checksum>
+          <checksum type="blake2b">
+            8d5bec87fbe1454a2b8508441c23684aefee072453a1c0fbc2b8c9c369808beb4c30ecbca5a820183747250b84eb090de505277edf6711b74d317e5b319a6b0f</checksum>
+          <checksum type="sha512">
+            e4d89f5831f8e7a8eed4d969e6991c0c65eee492f59a1d279c86d34dc52c83d1db839c3cacb08bf3a61cb1ed9d13ffbaf801c271684c4d0ae1b84f7ee76fe792</checksum>
+          <checksum type="sha256">b7ad8bf04ab65d9e5f353bbd5ad1f285b36dc61d7dd86991aa87c90b87c089d2</checksum>
+          <checksum type="sha1">feebf2167592387fe5b9c259d5a3b39959fba797</checksum>
+          <size type="download">149223</size>
+          <size type="installed">300336</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">11430b3e370af72af5209528d914bc4b2941720ae826533178426779b4c1f35d</checksum>
+          <checksum type="blake2b">
+            566582e60f8f48211b9d2a3de6311c3aa51a910e3f4086ca6192441c7bf3cc542fe4c57631de8f7a2a1ea43fd49afe9a930b902ff7919265816a7ed7afd416ef</checksum>
+          <checksum type="sha512">
+            76c8e6760d3f59d3f2ebf4fe929225d92580d2eb466fe74c5fa57e2c156bb6119b606005cf6c1e2cf18c6f5428e7b96762e6dfdd2e55ca93fb37fe4f195cd032</checksum>
+          <checksum type="sha256">bc5659bdc7b62f5ace4a2852531e7b01c3918db9a1421d8c629a30a8c949b3c8</checksum>
+          <checksum type="sha1">800db6fa3b9b5bfc5857c17bd90ecd4f805a66fc</checksum>
+          <size type="download">201428</size>
+          <size type="installed">460800</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">60152386e8b01c17d4672b5c237455995f65450170d66d32b569c95647ef4d10</checksum>
+          <checksum type="blake2b">
+            47271885a3154b81c4070db0d2c32606912f952903f2640c902448ed7d399e2f9430f00e9f1368dc4a01b5a2f35dc030a42055c0159cbedfc82436bef9ae029f</checksum>
+          <checksum type="sha512">
+            704277589a93060a1a75726ddcfab88e7c21f29f85118bf867cf079d6498492ba18d831fe315cdbc687da4a25975b1499141adaddbf0db39ddb69f0d090a4c42</checksum>
+          <checksum type="sha256">e49088e1eaabab00e733b564789ca8f998699a5f169e540f3436efdf8b63bb72</checksum>
+          <checksum type="sha1">1df326ab3b401e091fb1e281e202f799c3b1a417</checksum>
+          <size type="download">165801</size>
+          <size type="installed">389120</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-x86_64-pc-windows-gnu.zip</location>
+          <checksum type="blake3">bb99be871278a2686682ebcbe92fd06e9ad1a4ace936219324d1c7d8eb2b3f4e</checksum>
+          <checksum type="blake2b">
+            1704862c818cc6662dbb9bbdba0eabf67ccf652976e6ce5722d9cf17ba69d3a96d710c1d33b17dc7000a50c3496aa36d2f9ecd5f897ea18adad1d3db60dd7cf2</checksum>
+          <checksum type="sha512">
+            e0ea2a4806c33e89dacb3d2d810f8c4065cf0a7527f39d4622ab27271a2b3aaba8f08cd5594173f895e05ed3dffd001b1d7f55df6cdfa33d6494f3968b2884b9</checksum>
+          <checksum type="sha256">a8fa8ee47027ad79c97dd18a6daa20fd03693b29eb8dfd405fbf26d6eeadeaab</checksum>
+          <checksum type="sha1">3ef6f72ce7a71772e007f94453f73ceb374473a1</checksum>
+          <size type="download">1095788</size>
+          <size type="installed">3727863</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-x86_64-pc-windows-msvc.zip</location>
+          <checksum type="blake3">f85074028875e228f26bf5ed5ee2ff246fb41cc01bc1a9bf287111f56e9ad892</checksum>
+          <checksum type="blake2b">
+            eda6c0117f3a2bd206356e97357126669ac9e96fbadc688c061c0977bd5a70e9de49dc323d3af8b9d4657b407beda51cc29c0d6cd571e3348a436846a2c58045</checksum>
+          <checksum type="sha512">
+            0f506c07a93f3659df6fc681e34eee798ea2eaf4a81a99d01516f4659c9ed969332d306fa0462e26fa96581f286952a3888def4c6fa2560511b14eac42664d33</checksum>
+          <checksum type="sha256">6094c1b55246a0a143a69937c864d4cc8b2be2f764d03ea67514254769582422</checksum>
+          <checksum type="sha1">29e4c0006d4ccb4b617f7ef2681a1ef503a08f0b</checksum>
+          <size type="download">156677</size>
+          <size type="installed">357168</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">01cece422ade06102fded2bab127b6601b22b1ad7b2a6a72f5bd67eda9654087</checksum>
+          <checksum type="blake2b">
+            89bec5deddf59e1d101a6a1023e82bd1e9ae5669231f5c5fd28090c7f9218514cd4138f539e401ee6ff1efe7225196095423930a69e2db69459b2df8fccb7709</checksum>
+          <checksum type="sha512">
+            6ef395bd809fa39071c29c10eedf0517d7d588149bc3382f4ecc0066aa23e967fb903e2a1a19b06ba8129f3d9ff02bf1054d2caec84f2fe1c05f40a32b8efde8</checksum>
+          <checksum type="sha256">9b37c0ebb8c69600f22240bd2961b6df913ccc6a46c4ef4a288075409704cf59</checksum>
+          <checksum type="sha1">d99b2b836bd5372141a5480c24c0517349bef267</checksum>
+          <size type="download">191608</size>
+          <size type="installed">440320</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.1/kibi-v0.2.1-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">49d8b955b14a5cdc4043d3ac46753091be5e5a2b3dc654087a72839ad82ba32a</checksum>
+          <checksum type="blake2b">
+            2114b00b6ac03addcac63194dba541a90bb5259d49bd767b61f79019e072be9849b33f88a868d91999cb802216c3fdd2b0782a0033bdc999667104ea4b861c17</checksum>
+          <checksum type="sha512">
+            b37b769c780309fb52e1722dd7af63111edbf3da9741bce5e1c57efd8e6ace2db1f1d835cf1d6e704f31574c24b6417eeaf1f761a46a63c71bed09cb6c8fe3de</checksum>
+          <checksum type="sha256">21a2c05bff8331ca06341290256d2257c23df55820a8c415c183d504b9a8d4a0</checksum>
+          <checksum type="sha1">853e4030b05457702c5fae388857caf7a3f083cf</checksum>
+          <size type="download">227777</size>
+          <size type="installed">501760</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.2.0" date="2020-04-24">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.2.0</url>
+      <description>
+        <ul>
+          <li>Adds support for Windows</li>
+          <li>Adds a `--version` argument to the binary</li>
+          <li>Complies with the XDG base directory specification for configuration files</li>
+          <li>Fixes find behavior to match raw characters, not rendered ones</li>
+          <li>Fixes a crash when inserting a new line in the middle of a row</li>
+          <li>Fixes syntax highlighting not updating when inserting new lines or after pressing backspace</li>
+          <li>Fixes syntax highlighting when UTF-8 characters are present in the row</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/7">#7</issue>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/13">#13</issue>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/14">#14</issue>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/19">#19</issue>
+      </issues>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.2.0.tar.gz</location>
+          <checksum type="blake3">79bdfa6b06043e8ee782d52965fd7a3069711312e1a1a415288002454d1fe260</checksum>
+          <checksum type="blake2b">
+            c4c9fe4c55157e9338287faf9dade6dde8e8c9265669b1a8b2de3109889c10c3ef845ad80f9f518d5428815fb9763c6ba490a2eb0544b7a519b83d3097bf3d28</checksum>
+          <checksum type="sha512">
+            04d1f3b6c9a4668c80897580ae5e96d650d522cd7cfc89107224ff50b6bb280ff0c5e14cdb9c27763d0a2cac84d40893b6bfdd8efb17f4c1bfc2320351f9ab35</checksum>
+          <checksum type="sha256">7af69657ce50816e45e9111138cf9e050f74289bba3ceaa2a52e4715951c8885</checksum>
+          <checksum type="sha1">889054551b63a9335a24cf04bed625243f6bc34d</checksum>
+          <size type="download">35260</size>
+          <size type="installed">143360</size>
+        </artifact>
+        <artifact type="binary" platform="i386-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-i686-pc-windows-msvc.zip</location>
+          <checksum type="blake3">46aa09269015ef9ed775d84cba332812dd67355736f78db2a0bb63e587905533</checksum>
+          <checksum type="blake2b">
+            e4b2a399b02b7f0669de8805e896958a9e704629503700c66ce81fa9e0fa1fce33be1788d71e992a80c929d7dabcfc446967f855aac06c5414f63e2220db118d</checksum>
+          <checksum type="sha512">
+            94cb48546b72151f0ad807df38472baf46e63653b0d5e7afd814215444f65aa4daeef43dca509cf3e3ed5f8fba1bc3e15318b0dccb102c5e2ffb58f06fad8bf3</checksum>
+          <checksum type="sha256">78ff59bd85ce4025a33c08c523e6be998ee58396b8b76d9fddd52f72173959cc</checksum>
+          <checksum type="sha1">329a219ae3f3baea24bcc951f8141a5d89f2e9b9</checksum>
+          <size type="download">172821</size>
+          <size type="installed">352614</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">0d6b205ae700012d832a86003c8f5af964b07b501887f00591d2c2b0781909ec</checksum>
+          <checksum type="blake2b">
+            e9aea09ec93723c4a4bcadf5290bf30d0115121e97a1c882b6fe58ff36685df7b0945c01312443f8bd1c52e8bb8c1d21b1edaa97e3066dc2db6b05fead4952ae</checksum>
+          <checksum type="sha512">
+            4acd46579735b6c6e1dd4188a606c813def0a931e81f70fd3eb1a2cb2facf1042cda72d263c4f80c578ec916e5f4eaba9bdfc50a51d79f43df90e0db13eda183</checksum>
+          <checksum type="sha256">34a9da28f945ac69f97a3a720ee14719eead77392413287030d23bb038266069</checksum>
+          <checksum type="sha1">6e50e62e62eeb27ed9e061798105a6d80e901898</checksum>
+          <size type="download">253713</size>
+          <size type="installed">583680</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">e9f2fe9bbd140476cb95376f98f8cae80555c8039cbff26d80855497443e89e3</checksum>
+          <checksum type="blake2b">
+            91dfec24377a7bd0e10f697e329493537ad0c6f02bd861d19dc3ec9f6d48838d882d8196e960c4696d9fbd9b0ad6eb5414ba8cac757d95adfb89cab0ce787a89</checksum>
+          <checksum type="sha512">
+            3f65fa11c246f097fca9db4a62c8cc0fa1727ddaaabb80abed34461b502758cc4000949b0f0a17fd985734653c54fb210e82718704f5e287536421713bafdd61</checksum>
+          <checksum type="sha256">d23189ea48a8280a4c7236237b676484d2055858223d3a3effcda752e62fb9c6</checksum>
+          <checksum type="sha1">f7848abb9c0cfabd3c0458e0ff0bddefb7bfab0e</checksum>
+          <size type="download">206795</size>
+          <size type="installed">481280</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-x86_64-pc-windows-gnu.zip</location>
+          <checksum type="blake3">27f36b78daf82634ee2b1576763920285a8b1a7681bd70c4bba1c42d91059dc2</checksum>
+          <checksum type="blake2b">
+            8ff4934c0f1de4e43170726d761ca7c82b3dfffdca1224d6f99a079cc02a4eb847983d55f7c99efee234fc40dc81038e1a048fb65858e2be904ec84fd191648b</checksum>
+          <checksum type="sha512">
+            cef48931d34b0670713a4b4fa0cca7a7801dab2b7a07ad68d8cd4f031b6b7b7438824567a950460f00d40bc9d5c0cc08e48c163a8daf813ae81ff7e93dd7cd1f</checksum>
+          <checksum type="sha256">0736e2382f634cf9ea65fd397ed695fe36e4de5fcf24103566085f86502a3ce9</checksum>
+          <checksum type="sha1">950bf57c6d6544cb5c748ef2b80ff04b6c56a9ba</checksum>
+          <size type="download">1112762</size>
+          <size type="installed">3736908</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-windows-msvc">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-x86_64-pc-windows-msvc.zip</location>
+          <checksum type="blake3">6ab10c7a1a51cc77e33eae384f4f10e88ba6a45695f04a760559f04d6125289b</checksum>
+          <checksum type="blake2b">
+            24a8fbec4a74470270cc31a65ce1598b9fdfaa84edc75ec65c2f1e28c4bc873637ca1c237eeef774bba0089a855829442c2b8b145c876a4d0cb123b050eb032a</checksum>
+          <checksum type="sha512">
+            881bc62abe0b5f9e9980b53882e071f4602577e2fd46188e72d13f87f6effd8ab080513282a01dc2f8188c7eeeb48fa0ab828aea6700feca32b196fe12ca5c56</checksum>
+          <checksum type="sha256">d7083f8c2afd30e3348314ecdf398083f63bbc1f1abbc74dcc340e0ee10a3542</checksum>
+          <checksum type="sha1">6edf535f19fe71ef683cd9702bbcc5680348a0ae</checksum>
+          <size type="download">178217</size>
+          <size type="installed">408422</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">cb7b93efd25b09b7ec6f6bc3c1c6f105fcfa5a597f8b1b109bf1cb83bd80907c</checksum>
+          <checksum type="blake2b">
+            e8d849ca41e64eff8d77f35e3dab2d82e50d87cc070095c66d87d70071ac3bbb009b0d0de6f1ef4ce20a227723718d0fa3cd63c7fd8a5ed22a0e9342598e0b81</checksum>
+          <checksum type="sha512">
+            175bcb93ba434bd81740fc16a532b455a5fe2ee7e9fd058968aad7d63b61bbaf4cb6c69667e14e0e944dfaf5848c0fb59a9d2526d571c2dcd5b679758d2342d1</checksum>
+          <checksum type="sha256">3752da75ea91ba8e85e7202ae2a4d3ad0c8194f32f19ba8b32435f51cb3f06f9</checksum>
+          <checksum type="sha1">ec8b61690bae9ceb1f139bd142f5b301627b5f14</checksum>
+          <size type="download">239496</size>
+          <size type="installed">552960</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.2.0/kibi-v0.2.0-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">d9f21d0ba385a673298628e3845182c18fd8878687f6850cf47792dd88848f0a</checksum>
+          <checksum type="blake2b">
+            3dbff0cd7a717a9af07597a1578b729a64db487ea7e5ca471c00538079c7354b96bdc8bb9db55c449ea62512518b560853242a10a3bc2fa83f8bcf5d2e7cb948</checksum>
+          <checksum type="sha512">
+            c29c94688d15fa73fa9079e30888eaff93bbfecd73bfc32882690a6b21d0a86f6fddd754a7c64f6bacbb230fe5495f5684921027edae92e55b98347faea16caa</checksum>
+          <checksum type="sha256">213514355c77f1fafc56dc43dcfc06756ec596e9742bb38a0b680e9ddeab9268</checksum>
+          <checksum type="sha1">e4e48384c687ce436de5fdc84f74c6793c458d2f</checksum>
+          <size type="download">281366</size>
+          <size type="installed">614400</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.1.2" date="2020-02-17">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.1.2</url>
+      <description>
+        <ul>
+          <li>Adds support for UTF-8 characters</li>
+          <li>New feature: duplicate the current row with Ctrl+D</li>
+          <li>Adds syntax highlighting configuration for bash</li>
+          <li>Fixes path for system-wide configuration file</li>
+          <li>Fixes final new line being omitted when opening a file</li>
+          <li>Fixes erroneous field in the example configuration</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/ilai-deutel/kibi/issues/1">#1</issue>
+      </issues>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.1.2.tar.gz</location>
+          <checksum type="blake3">c848233cb821ac56ec45667a852101807d3a5d57240e020bf6f3cd25ebb60941</checksum>
+          <checksum type="blake2b">
+            d099a9c620daf54d1091eb85e733813c5ab20cd0ea0da9d5cbe11843f8265f57f59dd37333bd28bd4ad6146f6c1e01b577bd725180b6ed07d54b0235adc963e9</checksum>
+          <checksum type="sha512">
+            12f418120cd75b9b380d7eb9fdfaa51fc29b8b98860eba5a30dd4422d7447bf1df5a0eb7d2df4f2559aa72b0e83c8063c6f73d4690aec8dd6e6ba5a45681f1f1</checksum>
+          <checksum type="sha256">b44d9a8ff27b225a4ab05a87fd4b7355dc2d768431c58b7c767c08d993291496</checksum>
+          <checksum type="sha1">6f2fdea578697245ddb4824bfcbb7c4d0e20156d</checksum>
+          <size type="download">31433</size>
+          <size type="installed">133120</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.2/kibi-v0.1.2-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">1313b9cdea2c57099edcdb9df821f919e85a9c8caff96423aaa8d79947edf72b</checksum>
+          <checksum type="blake2b">
+            f6bba97e1def8cd6ff1129d660da37431318c238f092372d8e49eaed259ecacc4e57b2ae7eb1eb51117ab4ba9b3b33881083e88abc6512786bb4d4702a16b8eb</checksum>
+          <checksum type="sha512">
+            5abf1e11bfa3888b7472749c7287f7f2b185899a8e6c681981b0ebf656e4168e76cd0e8602076280709314e9c89fc3e8bc43d4ba4afae485328f568ae927eea7</checksum>
+          <checksum type="sha256">3c7e590c0fc2513998d26de7ae346732b6fb076081d9686dea3ac8518f94e87e</checksum>
+          <checksum type="sha1">81dc525f19570eb4202da90f975e6238decb75af</checksum>
+          <size type="download">247163</size>
+          <size type="installed">552960</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.2/kibi-v0.1.2-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">465b3c10cac6b4e148dfce0c3cf86d511ea45df65a5d44f03ee86f99f46940ab</checksum>
+          <checksum type="blake2b">
+            b368b1261b2985929977a9cc94fca48e0e55435f8715e5699a64df0daab1ec640021295523bfc6495d1fec408e97dc205c6299122e5894857fd20f4038ba2d0f</checksum>
+          <checksum type="sha512">
+            9aa2c016eeabe7360db1e46b2f4d6a9337e7696ea1187dfc91f167ef90f07d799cba3a6bc21c27fbfebdc89749900ef9b0d1d1bdbaf2ecc6991c918f56023bd5</checksum>
+          <checksum type="sha256">466333bf0cf8def71a261be2d3c17b6925834b1f7084ff3b2b9fa986d1443fe9</checksum>
+          <checksum type="sha1">ab0dc06e05be94e1b243bb4c9b28613392b4ccca</checksum>
+          <size type="download">201634</size>
+          <size type="installed">460800</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.2/kibi-v0.1.2-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">05cb664b0bdc5389bdfc0df729b70befee877d463fb62eede4e203b985fab2dc</checksum>
+          <checksum type="blake2b">
+            0757d40d624bf57a58e8d0660386548c9949d05e6c1285a6d2145066cc563abdba356e3870220b35266695348f6dbcc62bc225d41120b5597e7e063d3db65536</checksum>
+          <checksum type="sha512">
+            bbb34eb1adc5a54c42e6df21f58a2cf2d56e4fca599ffe1af1dbe37f9ced507c40f6767191f77e0e392cfef65ce68d5a19767c112e8009e11589613f577c7c05</checksum>
+          <checksum type="sha256">26e3f76869e64db6640626c60045bed3ff4eb735b8810ed317fa326e2b93b743</checksum>
+          <checksum type="sha1">b477a7eede522a891caf45fcbe2a92d5d001df64</checksum>
+          <size type="download">232181</size>
+          <size type="installed">522240</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.2/kibi-v0.1.2-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">dff5b85ce12cd4ebadae6b8c20197dd96479ffe866dd14481a9f295677bb0d29</checksum>
+          <checksum type="blake2b">
+            b32ca7e8a4e36ccc449d4647c8a115f053689171db1b81b3fb39bf894208025137e4ab131de354ec2d1bf49659d93faf37b13623e1c88ab8e814e9de088654f6</checksum>
+          <checksum type="sha512">
+            4ea25ecb09c388f9889ea3fc31dc08297264c39423a382e1ff8431e6afa497261aef9381abfead7cedd417f6e3222e533cc5a0d532eecd24c7d10768acdf37eb</checksum>
+          <checksum type="sha256">57e036069d68c27dfa7836fb4cf3eb7449f46e867a5cb4cc44dae5532a953c44</checksum>
+          <checksum type="sha1">665d854961d78274e82474b701b00640837de3a8</checksum>
+          <size type="download">259822</size>
+          <size type="installed">552960</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.1.1" date="2020-02-10">
+      <url type="details">https://github.com/ilai-deutel/kibi/releases/tag/v0.1.1</url>
+      <description>
+        <ul>
+          <li>Adds an example of configuration file</li>
+          <li>Fixes invalid package metadata</li>
+        </ul>
+      </description>
+      <artifacts>
+        <artifact type="source">
+          <location>https://github.com/ilai-deutel/kibi/archive/refs/tags/v0.1.1.tar.gz</location>
+          <checksum type="blake3">dcf927d2c5ed9cc0a9fa83b71786b2aa981d11067cfa2147695ab8bd0145e26f</checksum>
+          <checksum type="blake2b">
+            ae80c5937e70ab66cdf67454387fda6238b80263cff12a8d2a1f58b12f325e300bb7be84ec5e54ea358e69c9edfde9ab4154379edbb9eedb522767c84ab2be52</checksum>
+          <checksum type="sha512">
+            4fbd64fffc03c05d2e203c53e0dbe7a36f4aef9984fde5b17f6214d80486d9b9a519cb2d885d45dea0b7f2bd4275fae37efa358efb9aa82b7592f47a0cac18f3</checksum>
+          <checksum type="sha256">097a217287daa86e8a54423e266707ccaa1f4a2aa9266a3454d992cd97473eda</checksum>
+          <checksum type="sha1">06685468f254e4c74dd7a54a0c847d7f5fdf86c7</checksum>
+          <size type="download">30207</size>
+          <size type="installed">133120</size>
+        </artifact>
+        <artifact type="binary" platform="i386-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.1/kibi-v0.1.1-i686-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">b2dccb595590963dcb64d4c30f87f05c4bf3ceb1c49f951511a7c4b85fa1a921</checksum>
+          <checksum type="blake2b">
+            c0226907fc9952c887571ea2592eab774073f284fd04a6f887888ad661cad12600e61d28435fe7aa745bd19c956d19119e18a626241949c0637bf2cf2318c6a9</checksum>
+          <checksum type="sha512">
+            717a3e768bc1add8e40bce02e72373d82e8fadd763f5f873c1c37f9a015b0032fa0754b2bc9c53cfe5834e7a357c7bb61f6ab3e6445d52868a275cd7e14a9396</checksum>
+          <checksum type="sha256">ec69afb85c58c71957e90c142513fed8984349b7bd7f7766b69474755e0851d8</checksum>
+          <checksum type="sha1">e94ceaa5710b50bf33e87d97499f237eb78e82b6</checksum>
+          <size type="download">241610</size>
+          <size type="installed">542720</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-darwin-any">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.1/kibi-v0.1.1-x86_64-apple-darwin.tar.gz</location>
+          <checksum type="blake3">247b9b03a25f2e051ecbe14fc3a485641c904acebac7eef6611c0f71298406b2</checksum>
+          <checksum type="blake2b">
+            6d2614ec2dd5ee455f9b333873c726e8f7b96fb428b06966583fc6e2d7d3aebd92fd85369e9901b3c148d71c21ed08264357fa387da14c45950147cff51875fa</checksum>
+          <checksum type="sha512">
+            12a52044fbe440badb8be2abae0cf4303f4520920fe94a87ddfe4bef440c63b6e069e18d041043ad8330ef3861175c4d9296df17a43a11ca9834de7443e8c37f</checksum>
+          <checksum type="sha256">4ee9428ec40fe4a2b308a372dd73675ac3d07eff57d952593a46651e7490379f</checksum>
+          <checksum type="sha1">f8ed4c6b26592813d82350fc3ff8c9522ff783c4</checksum>
+          <size type="download">195560</size>
+          <size type="installed">440320</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-gnu">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.1/kibi-v0.1.1-x86_64-unknown-linux-gnu.tar.gz</location>
+          <checksum type="blake3">185124efc73788b48430a96f51e021bed8ebadfffedd935b15f9eb988e1e0d20</checksum>
+          <checksum type="blake2b">
+            014416e2217de7dc92c6b2fb5dcc8e6744cea5cb8822b9f8083eb002aee571975cf572f8463e6e642adc784f97eecbcd22dbfdbbe8b41bfb3b61c8bc936274b2</checksum>
+          <checksum type="sha512">
+            e11382bc5b50e7bf9e816acacac11b88528b9a0b63388e47dbe0d4161af41897e7a12db07aa464c2fa202de1fe7fc6999a6809229d314be01f9a7bc06ef41f04</checksum>
+          <checksum type="sha256">6c39802fbf6c81ad4a8251b35cf04d8fbb6a69a0dc0c8ad9d2f99066f4f7e019</checksum>
+          <checksum type="sha1">d24475cfef995fcbe9297b7b7856d232319dc51b</checksum>
+          <size type="download">226368</size>
+          <size type="installed">512000</size>
+        </artifact>
+        <artifact type="binary" platform="x86_64-linux-musl">
+          <location>
+            https://github.com/ilai-deutel/kibi/releases/download/v0.1.1/kibi-v0.1.1-x86_64-unknown-linux-musl.tar.gz</location>
+          <checksum type="blake3">e582e58b309894a98757717f6800f26fb7953f0c432239fc0f71e2d78c098158</checksum>
+          <checksum type="blake2b">
+            87a82bc6e7925e58284d51b2473240ad88a2b32965fc3234e539bb3e5b342070187858935bdd1695e2e3e37fba28ff18cbd9a84bcd7c584e0e07f36dc828ce7d</checksum>
+          <checksum type="sha512">
+            f79c9e5383dceafa117716366f21fe411507fabc65ab1a72a84d9593ea5c79a0c0b5fefebdd55f1645461ba91d8f756152293305f02d74cd5a3776d4911f8005</checksum>
+          <checksum type="sha256">fd0ee1c44dc3e1956190013cb3cf7dc15af640add9a4d6f3848d54fff1a665ac</checksum>
+          <checksum type="sha1">1219cdb12a5919e2c9e2e265113ce9741f3a4b32</checksum>
+          <size type="download">254294</size>
+          <size type="installed">542720</size>
+        </artifact>
+      </artifacts>
+    </release>
+    <release version="0.1.0" date="2020-02-10">
+      <description>
+        <p>Initial release.</p>
+      </description>
+    </release>
+  </releases>
+  <provides>
+    <binary>kibi</binary>
+  </provides>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/ilai-deutel/kibi/refs/tags/v0.3.1/assets/asciicast.gif</image>
+      <caption>Kibi in action: creating and editing a file, with syntax highlighting and search feature</caption>
+    </screenshot>
+  </screenshots>
+  <launchable type="desktop-id">com.github.ilai_deutel.kibi.desktop</launchable>
+  <content_rating type="oars-1.1" />
+  <requires>
+    <internet>offline-only</internet>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>console</control>
+    <display_length compare="ge">360</display_length>
+  </recommends>
+  <branding>
+    <color type="primary" scheme_preference="light">#ff7070</color>
+    <color type="primary" scheme_preference="dark">#330000</color>
+  </branding>
+  <icon type="stock">com.github.ilai_deutel.kibi</icon>
+</component>
