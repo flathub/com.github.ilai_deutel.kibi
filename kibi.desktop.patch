@@ -1,9 +1,9 @@
---- a/kibi.desktop	2021-12-30 04:33:50.019741557 -0500
-+++ b/kibi.desktop	2021-12-30 05:06:47.509887681 -0500
-@@ -3,7 +3,7 @@
- GenericName=Text Editor
+--- a/kibi.desktop
++++ b/kibi.desktop
+@@ -4,7 +4,7 @@
  GenericName[fr]=Éditeur de texte
- Exec=kibi %f
+ TryExec=kibi
+ Exec=kibi -- %f
 -Icon=kibi
 +Icon=com.github.ilai_deutel.kibi
  Type=Application

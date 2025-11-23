@@ -1,7 +1,7 @@
 app-id: com.github.ilai_deutel.kibi
 
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -38,8 +38,8 @@ modules:
     sources:
       - cargo-sources.json
       - type: archive
-        url: https://github.com/ilai-deutel/kibi/archive/v0.3.1/kibi-0.3.1.tar.gz
-        sha256: 2905743c8fc065054d3776e9b16fe89903cc0547eaedd8d33b66d2e29ceb0191
+        url: https://github.com/ilai-deutel/kibi/archive/v0.3.2/kibi-0.3.2.tar.gz
+        sha256: 150fde4664ebe47a4c588cf8ff2583392c76038339982a7180ee9282ce6c3cf2
       - type: file
         path: com.github.ilai_deutel.kibi.metainfo.xml
       - type: patch
